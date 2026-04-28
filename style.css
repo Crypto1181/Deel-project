@@ -88,7 +88,8 @@ body {
     background-color: #f6f0fe;
 }
 
-.nav-hover-item:hover .bg-light {
+.nav-hover-item:hover .bg-light,
+.nav-hover-item:hover .bbb {
     background-color: #bba1ff !important;
 }
 
@@ -104,91 +105,10 @@ body {
     background-color: #fef0d8;
 }
 
-/* Hero Section Styles */
-.hero-container {
-    background-color: #150b3e;
-    color: white;
-    border-radius: 24px;
-    padding: 80px 60px;
-    height: 100%; 
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start; 
-}
-
-.hero-pill {
-    background-color: rgba(255, 255, 255, 0.1);
-    border-top: 1px solid rgba(253, 253, 253, 0.665);
-    border-radius: 50px;
-    padding: 6px 16px;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 13px;
-    width: fit-content;
-    margin-bottom: 40px; 
-}
-
-.hero-heading {
-    font-size: 64px;
-    font-weight: 700;
-    line-height: 1.1;
-    margin-bottom: 40px; 
-}
-
-.hero-heading span {
-    color: #bba1ff; 
-}
-
-.hero-text {
-    font-size: 18px;
-    max-width: 450px;
-    margin-bottom: 80px; 
-    color: rgba(255, 255, 255, 0.9);
-    line-height: 1.6;
-}
-
-.btn-hero {
-    background-color: #6248ff;
-    color: white;
-    border-radius: 50px;
-    padding: 12px 28px;
-    font-weight: 600;
-    border: none;
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.btn-hero:hover {
-    background-color: #4b36d1;
-    color: white;
-}
-
-.carousel-container {
-    border-radius: 24px;
-    overflow: hidden;
-}
-
-.carousel-inner img {
-    height: 600px;
-    object-fit: cover;
-}
-
 .bottom-hover-item img, .nav-hover-item img {
     transition: transform 0.2s ease;
 }
 
 .bottom-hover-item:hover img, .nav-hover-item:hover img {
     transform: scale(1.1);
-}
-
-.greater{
-    background-color: #201547;
-    color: white;
-}
-
-.gunman{
-    background-color: blue;
 }
