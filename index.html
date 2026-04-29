@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="w-100  bg-white py-3">
+    <header class="w-100  bg-white py-3 position-sticky top-0" style="z-index: 2000;">
         <div class="container position-relative d-flex align-items-center justify-content-between py-1">
 
 
@@ -1021,24 +1021,25 @@
         </div>
     </header>
 
-    <section class="w-full overflow-hidden" style="padding: 0 100px;">
+    <section class="px-3 px-md-4 px-lg-4 pb-4">
         <div class="row g-3 m-0">
 
             <!-- LEFT: Purple Hero Card -->
-            <div class="col-12 col-lg-6 p-0 pe-lg-2" >
-                <div class="rounded-4 p-5 d-flex flex-column"
-                    style="background-color: #150b3e; color: white; height: 793px;">
+            <div class="col-12 col-lg-6 p-0 pe-lg-2">
+                <div class="rounded-4 p-4 p-md-5 d-flex flex-column"
+                    style="background-color: #150b3e; color: white; min-height: 400px; height: 100%;">
+
 
                     <!-- Top pill badge -->
                     <div class="d-inline-flex align-items-center gap-2 rounded-pill px-3 py-2 "
-                        style="background: rgba(255,255,255,0.12); font-size: 13px; width: fit-content; border-top: 1px solid white; cursor: pointer;">
+                        style="background: rgba(255,255,255,0.12); font-size: 12px; width: fit-content; border-top: 1px solid white; cursor: pointer;">
                         <img src="media/deel_logo_purple.fdeb49b6.svg" width="16" alt="">
                         <span>Skip the sales call. Hire your first employee now.</span>
                         <i class="fa-solid fa-chevron-right" style="font-size: 10px;"></i>
                     </div>
 
 
-                    <h1 class="fw-light lh-sm mb-4" style="font-size: 50px;">
+                    <h1 class="fw-bold lh-sm mb-4" style="font-size: clamp(32px, 5vw, 56px);">
                         Hire, manage, pay, &<br>
                         equip anyone,<br>
                         <span style="color: #bba1ff;">anywhere.</span>
@@ -1063,8 +1064,8 @@
             </div>
 
             <!-- RIGHT: Carousel Card -->
-            <div class="col-12 col-lg-6 p-0 ps-lg-2 h-100">
-                <div id="heroCarousel" class="carousel slide rounded-4 overflow-hidden" style="height: 793px;"
+            <div class="col-12 col-lg-6 p-0 ps-lg-2">
+                <div id="heroCarousel" class="carousel slide rounded-4 overflow-hidden" style="min-height: 400px; height: 100%;"
                     data-bs-ride="carousel">
                     <div class="carousel-inner h-100">
 
@@ -1190,9 +1191,9 @@
                     </div>
 
 
-                    <div class="carousel-indicators" style="bottom: 20px;">
+                    <div class="carousel-indicators" style="bottom: 20px; gap: 25px;" style="background-color: transparent;">
                         <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"
-                            style="width: 8px; height: 8px; border-radius: 50%;"></button>
+                            style="width: 10px; height: 10px; border-radius: 50%;"></button>
                         <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"
                             style="width: 8px; height: 8px; border-radius: 50%;"></button>
                         <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"
@@ -1207,13 +1208,60 @@
     </section>
 
 
-    <section>
-        <nav>
-            <h4>Trusted by 40,000+ companies from startups to enterprise</h4>
+    <section class="w-auto" style="margin-top: 100px;">
+        <nav class="container">
+            <h4 class="text-muted text-uppercase fw-light fs-5">Trusted by 40,000+ companies from startups to enterprise</h4>
         </nav>
         
 
 
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+
+            <!-- Section label & heading -->
+            <p class="text-muted text-uppercase fw-semibold mb-2" style="font-size: 12px; letter-spacing: 1.5px;">What Deel Does</p>
+            <h2 class="fw-bold mb-5" style="font-size: 40px;">The Global People Platform</h2>
+
+            <!-- Three cards -->
+            <div class="row g-4">
+
+                <!-- Card 1: Deel Payroll -->
+                <div class="col-12 col-md-4">
+                    <div class="rounded-4 p-4 d-flex flex-column" style="background-color: #f5f5f0; min-height: 380px;">
+                        <h5 class="fw-bold mb-1" style="font-size: 18px;">Deel Payroll</h5>
+                        <p class="text-muted mb-4" style="font-size: 14px;">Local and global payroll, your way.</p>
+                        <div class="mt-auto">
+                            <img src="" alt="Deel Payroll UI" class="w-100 rounded-3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2: Deel HR -->
+                <div class="col-12 col-md-4">
+                    <div class="rounded-4 p-4 d-flex flex-column" style="background-color: #f5f5f0; min-height: 380px;">
+                        <h5 class="fw-bold mb-1" style="font-size: 18px;">Deel HR</h5>
+                        <p class="text-muted mb-4" style="font-size: 14px;">One HR system for every worker.</p>
+                        <div class="mt-auto">
+                            <img src="" alt="Deel HR UI" class="w-100 rounded-3">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3: Deel IT -->
+                <div class="col-12 col-md-4">
+                    <div class="rounded-4 p-4 d-flex flex-column" style="background-color: #f5f5f0; min-height: 380px;">
+                        <h5 class="fw-bold mb-1" style="font-size: 18px;">Deel IT</h5>
+                        <p class="text-muted mb-4" style="font-size: 14px;">Devices and support, anywhere.</p>
+                        <div class="mt-auto">
+                            <img src="" alt="Deel IT UI" class="w-100 rounded-3">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
     </section>
 
 

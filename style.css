@@ -105,6 +105,31 @@ body {
     background-color: #fef0d8;
 }
 
+
+#heroCarousel,
+#heroCarousel .carousel-item {
+    min-height: 400px;
+}
+
+@media (min-width: 768px) {
+    #heroCarousel,
+    #heroCarousel .carousel-item {
+        min-height: 520px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #heroCarousel,
+    #heroCarousel .carousel-item {
+        min-height: 680px;
+    }
+   
+    section .row {
+        align-items: stretch;
+    }
+}
+
+
 .bottom-hover-item img, .nav-hover-item img {
     transition: transform 0.2s ease;
 }
