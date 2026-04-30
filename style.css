@@ -137,3 +137,43 @@ body {
 .bottom-hover-item:hover img, .nav-hover-item:hover img {
     transform: scale(1.1);
 }
+
+.scroll2{
+    display: flex;
+    width: 2400px;
+   animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    from{
+        transform: translateX(0);
+    
+    }
+
+    to{
+        transform: translateX(-50%);
+    }
+}
+
+
+.scroll{
+    display: flex;
+    width: 1400px;
+    animation: scroll 10s linear infinite;
+}
+
+
+
+
+.scroll img{
+    width: 50px;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    
+}
+
+.scroll2 img{
+    width: 100px;
+    margin-left: 30px;
+  
+}
