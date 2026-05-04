@@ -1,0 +1,114 @@
+/* TOP BUTTONS */
+.custom-tab-btn {
+    border: none;
+    background: transparent;
+    border-radius: 3px;
+    padding: 0;
+}
+
+.custom-tab-btn:hover {
+    background: rgba(128, 128, 128, 0.095);
+    border-radius: 3px;
+}
+
+
+
+.dot {
+    width: 16px;
+    height: 16px;
+    background-color: #cfcfcf;
+    border-radius: 50%;
+    position: absolute;
+    top: -9px;
+}
+
+.dot-1 {
+    left: 0%;
+}
+
+.dot-2 {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dot-3 {
+    right: 0%;
+}
+
+
+.info-card {
+    border-radius: 20px;
+    padding: 35px;
+    min-height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+}
+
+/* BLUE THEME */
+.theme-blue {
+    background-color: #d8ebff;
+}
+
+/* YELLOW THEME */
+.theme-yellow {
+    background-color: #f5ecc9;
+}
+
+/* PURPLE THEME */
+.theme-purple {
+    background-color: #f6f0fe;
+}
+
+.tab-box {
+    font-weight: 700;
+    color: #6b6b6b;
+}
+
+.icon-box {
+    padding: 8px 10px;
+    border-radius: 10px;
+    margin-right: 8px;
+}
+
+/* PAYROLL  */
+.custom-tab-btn.active .payroll-theme {
+    background-color: #d8ebff;
+    color: black;
+}
+
+.custom-tab-btn.active .payroll-theme .icon-box {
+    background-color: #b1d8fc;
+}
+
+/* HR */
+.custom-tab-btn.active .hr-theme {
+    background-color: #f5ecc9;
+    color: black;
+}
+
+.custom-tab-btn.active .hr-theme .icon-box {
+    background-color: #ffe27c;
+}
+
+/* IT */
+.custom-tab-btn.active .it-theme {
+    background-color: #f6f0fe;
+    color: black;
+}
+
+.custom-tab-btn.active .it-theme .icon-box {
+    background-color: #dac5ff;
+}
+
+/* HIRE */
+.custom-tab-btn.active .hire-theme {
+    background-color: #f5ecc9;
+    color: black;
+}
+
+.custom-tab-btn.active .hire-theme .icon-box {
+    background-color: #ffe27c;
+}
