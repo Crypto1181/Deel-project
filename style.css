@@ -16,7 +16,7 @@ body {
 }
 
 .nav-item:hover {
-    color: #000;
+    color: #000000a9;
 }
 
 .lang-hover {
@@ -112,6 +112,7 @@ body {
 }
 
 @media (min-width: 768px) {
+
     #heroCarousel,
     #heroCarousel .carousel-item {
         min-height: 520px;
@@ -119,61 +120,224 @@ body {
 }
 
 @media (min-width: 1024px) {
+
     #heroCarousel,
     #heroCarousel .carousel-item {
         min-height: 680px;
     }
-   
+
     section .row {
         align-items: stretch;
     }
 }
 
 
-.bottom-hover-item img, .nav-hover-item img {
+.bottom-hover-item img {
     transition: transform 0.2s ease;
 }
 
-.bottom-hover-item:hover img, .nav-hover-item:hover img {
+.bottom-hover-item:hover img {
     transform: scale(1.1);
 }
 
-.scroll2{
+.carousel-indicators [data-bs-target] {
+    background-color: rgba(225, 225, 225, 0.4);
+    transition: background-color 0.2s ease;
+}
+
+.carousel-indicators .active {
+    background-color: #c4b1f9;
+    transform: scale(1.5);
+}
+
+.carousel-fade .carousel-item {
+    transition: opacity 0.8s ease-in-out;
+}
+
+.scroll2 {
     display: flex;
     width: 2400px;
-   animation: scroll 10s linear infinite;
+    animation: scroll 16s linear infinite;
 }
 
 @keyframes scroll {
-    from{
+    from {
         transform: translateX(0);
-    
+
     }
 
-    to{
+    to {
         transform: translateX(-50%);
     }
 }
 
 
-.scroll{
+.scroll {
     display: flex;
     width: 1400px;
-    animation: scroll 10s linear infinite;
+    animation: scroll 13s linear infinite;
 }
 
 
 
 
-.scroll img{
+.scroll img {
     width: 50px;
     margin-left: 30px;
     margin-bottom: 20px;
-    
+
 }
 
-.scroll2 img{
+.scroll2 img {
     width: 100px;
     margin-left: 30px;
-  
+
+}
+
+.cour {
+    background-color: white;
+    position: relative;
+
+}
+
+.cour::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0));
+    z-index: 2;
+    pointer-events: none;
+}
+
+.cour::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(to left, white, rgba(255, 255, 255, 0));
+    z-index: 2;
+    pointer-events: none;
+}
+
+
+.speed-nav .nav-link {
+    border: none;
+    background: transparent;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    padding: 0 12px 0 0;
+    color: #6c757d;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    height: 36px;
+}
+
+.speed-nav .nav-link:hover {
+    background-color: #f8f9fa;
+}
+
+
+.speed-nav .nav-link.active {
+    color: #000;
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,0.075);
+}
+
+.speed-nav .nav-link .icon-box {
+    width: 28px;
+    height: 28px;
+    margin: 4px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    background-color: transparent;
+}
+
+
+#pills-payroll-tab.active { background-color: #dcf0ff; }
+#pills-payroll-tab.active .icon-box { background-color: #bee1ff; }
+
+
+#pills-hr-tab.active { background-color: #f5f0d8; }
+#pills-hr-tab.active .icon-box { background-color: #ebdca8; }
+
+
+#pills-it-tab.active { background-color: #f3f0ff; }
+#pills-it-tab.active .icon-box { background-color: #e0d4ff; }
+
+
+#pills-hire-tab.active { background-color: #fdf1d6; }
+#pills-hire-tab.active .icon-box { background-color: #fbd68b; }
+
+.speed-content-card {
+    min-height: 120px;
+    width: 280px;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.feature-card-dark {
+    background-color: transparent;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease;
+    cursor: default;
+}
+
+.feature-card-dark:hover {
+    background-color: #2b2b2b;
+}
+
+
+
+.modern-experience-img-container {
+    border-radius: 2.5rem;
+    overflow: hidden;
+    background-color: #2b2b2b;
+    min-height: 500px;
+    position: relative;
+}
+
+.modern-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    border-radius: 2.5rem;
+}
+
+
+.modern-img-1 {
+    opacity: 1;
+}
+
+
+.modern-section:has(.modern-card-2:hover) .modern-img-1 { opacity: 0; }
+.modern-section:has(.modern-card-2:hover) .modern-img-2 { opacity: 1; }
+
+.modern-section:has(.modern-card-3:hover) .modern-img-1 { opacity: 0; }
+.modern-section:has(.modern-card-3:hover) .modern-img-3 { opacity: 1; }
+
+.modern-section:has(.modern-card-2:hover) .modern-card-2 {
+    background-color: #2b2b2b ;
+    border-color: #3d3d3d ;
+}
+.modern-section:has(.modern-card-3:hover) .modern-card-3 {
+    background-color: #2b2b2b ;
+    border-color: #3d3d3d ;
 }
