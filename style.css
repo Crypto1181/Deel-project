@@ -462,3 +462,60 @@ body {
     object-fit: contain;
     display: block;
 }
+
+/* =================================
+   MOBILE: Modern accordion overrides
+   ================================= */
+.accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+.accordion-button::after {
+    filter: invert(1);
+}
+
+/* =================================
+   What Deel Does Feature Cards
+   ================================= */
+.deel-feature-card {
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.deel-feature-card:hover {
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.deel-feature-arrow {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-size: 16px;
+    color: #000;
+}
+
+.deel-feature-card:hover .deel-feature-arrow {
+    opacity: 1;
+    transform: translateX(5px);
+}
+
+/* Show arrow on mobile without hover */
+@media (max-width: 767.98px) {
+    .deel-feature-arrow {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* =================================
+   Deel Speed Navigation
+   ================================= */
+.speed-nav::-webkit-scrollbar { display: none; }
+.speed-nav .nav-link { color: #555; border-radius: 12px; padding: 10px 16px; transition: 0.3s; }
+.speed-nav .nav-link.active { color: #000; }
+#pills-payroll-tab.active { background-color: #dcf0ff; }
+#pills-hr-tab.active { background-color: #f5f0d8; }
+#pills-it-tab.active { background-color: #f3f0ff; }
+#pills-hire-tab.active { background-color: #fdf1d6; }
