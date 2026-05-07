@@ -679,7 +679,7 @@
                     <div class="dropdown position-static">
                         <div class="solutions-toggle d-flex align-items-center gap-1 nav-item fw-semibold"
                             data-bs-toggle="dropdown" data-bs-auto-close="outside" data-bs-display="static"
-                            style="font-size: 15px; cursor: pointer;">
+                            style="font-size: 15px; cursor: pointer; padding: 22px 0; margin: -22px 0;">
                             Resources <i class="fa-solid fa-chevron-down" style="font-size: 10px;"></i>
                         </div>
 
@@ -1021,6 +1021,60 @@
         </div>
     </header>
 
+    <!-- Offcanvas Menu -->
+    <div class="offcanvas offcanvas-top" tabindex="-1" id="mobileMenu" aria-labelledby="mobileMenuLabel" style="height: 550px; background-color: white; z-index: 2050;">
+        <div class="offcanvas-header py-3 px-4 d-flex align-items-center justify-content-between" style="border-bottom: 1px solid #f0f0f0;">
+            <img src="media/logo_revamp_164ddaed0c.svg" alt="Deel Logo" style="height: 28px;">
+            <div class="d-flex align-items-center gap-3">
+                <button type="button" class="btn btn-dark rounded-pill px-3 py-2 fw-semibold" style="font-size: 14px;">Book a demo</button>
+                <button type="button" class="btn rounded-circle d-flex align-items-center justify-content-center p-0" style="width: 40px; height: 40px; border: 0; color: #121214; background: white;" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <i class="fa-solid fa-xmark fs-5"></i>
+                </button>
+            </div>
+        </div>
+        
+        <div class="offcanvas-body p-0 d-flex flex-column">
+            <!-- Menu Items -->
+            <div class="flex-grow-1 px-4 py-2">
+                <div class="d-flex align-items-center justify-content-between py-3 text-dark fw-bold" style="font-size: 16px; border-bottom: 1px solid #f0f0f0; cursor: pointer;">
+                    Solutions <i class="fa-solid fa-chevron-right text-dark" style="font-size: 12px;"></i>
+                </div>
+                <div class="d-flex align-items-center justify-content-between py-3 text-dark fw-bold" style="font-size: 16px; border-bottom: 1px solid #f0f0f0; cursor: pointer;">
+                    Use cases <i class="fa-solid fa-chevron-right text-dark" style="font-size: 12px;"></i>
+                </div>
+                <div class="d-flex align-items-center justify-content-between py-3 text-dark fw-bold" style="font-size: 16px; border-bottom: 1px solid #f0f0f0; cursor: pointer;">
+                    Who we serve <i class="fa-solid fa-chevron-right text-dark" style="font-size: 12px;"></i>
+                </div>
+                <div class="d-flex align-items-center justify-content-between py-3 text-dark fw-bold" style="font-size: 16px; border-bottom: 1px solid #f0f0f0; cursor: pointer;">
+                    Resources <i class="fa-solid fa-chevron-right text-dark" style="font-size: 12px;"></i>
+                </div>
+                <div class="d-flex align-items-center justify-content-between py-3 text-dark fw-bold" style="font-size: 16px; border-bottom: 1px solid #f0f0f0; cursor: pointer;">
+                    Pricing
+                </div>
+
+                <button class="btn w-100 rounded-pill mt-4 fw-bold py-2" style="border: 1px solid #d8d8d8; color: #121214; font-size: 15px;">Log in</button>
+            </div>
+
+            <!-- Footer Area -->
+            <div class="px-4 py-3 mt-3" style="background-color: #fef5e6;">
+                <div class="d-flex justify-content-center align-items-center gap-3 fw-bold text-dark mb-2" style="font-size: 12px;">
+                    <a href="#" class="text-dark text-decoration-none">Book a demo</a>
+                    <div style="width: 1px; height: 12px; background-color: #d8d8d8;"></div>
+                    <a href="#" class="text-dark text-decoration-none">Compare Deel</a>
+                    <div style="width: 1px; height: 12px; background-color: #d8d8d8;"></div>
+                    <a href="#" class="text-dark text-decoration-none">Help center</a>
+                </div>
+                <div class="d-flex justify-content-center align-items-center gap-2 fw-bold text-dark mt-3" style="font-size: 13px;">
+                    <div class="position-relative" style="width: 24px; height: 24px;">
+                        <img src="media/black-globe.abc6410e.svg" alt="Globe" width="18" class="position-absolute" style="bottom: 0; right: 0;">
+                        <img src="media/united-states.svg" alt="US Flag" width="14" class="position-absolute" style="top: 0; left: 0; border-radius: 50%; border: 1px solid white; z-index: 1;">
+                    </div>
+                    EN
+                </div>
+            </div>
+        </div>
+    </div>
+
     <section class="px-3 px-md-4 px-lg-4 pb-4">
         <div class="row g-3 m-0">
 
@@ -1052,9 +1106,9 @@
                     </p>
 
 
-                    <div>
-                        <button class="btn rounded-pill px-4 py-2 fw-semibold d-inline-flex align-items-center gap-2"
-                            style="background: #6248ff; color: white; font-size: 15px;">
+                    <div class="mt-2">
+                        <button class="btn rounded-pill fw-bold d-inline-flex align-items-center justify-content-center gap-2"
+                            style="background-color: white; color: #150b3e; font-size: 15px; padding: 12px 32px; min-width: 240px;">
                             Book a demo <i class="fa-solid fa-chevron-right" style="font-size: 11px;"></i>
                         </button>
                     </div>
@@ -1065,7 +1119,7 @@
             <!-- RIGHT: Carousel Card -->
             <div class="col-12 col-lg-6 p-0 ps-lg-2">
                 <div id="heroCarousel" class="carousel slide carousel-fade rounded-4 overflow-hidden"
-                    style="min-height: 400px; height: 100%;" data-bs-ride="carousel">
+                    style="min-height: 400px; height: 100%;" data-bs-ride="carousel" data-bs-interval="2500">
                     <div class="carousel-inner h-100">
 
                         <!-- Slide 1: Ramp -->
@@ -1915,8 +1969,8 @@
     <section class="mt-5 pb-5 testimonials-section">
         <div class="container mb-5">
             <p class="text-uppercase fw-bold fs-6 mb-2" style="color: #888; letter-spacing: 2px;">TESTIMONIALS</p>
-            <div class="d-flex justify-content-between align-items-start">
-                <h2 class="fw-bold" style="font-size: 42px; line-height: 1.2;">Our customer reviews</h2>
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start gap-3">
+                <h2 class="fw-bold" style="font-size: clamp(32px, 5vw, 42px); line-height: 1.2;">Our customer reviews</h2>
                 <p style="max-width: 420px; font-size: 16px; line-height: 1.6; color: #555; padding-top: 8px;">Discover
                     the insights from customers regarding their experiences with Deel.</p>
             </div>
@@ -1939,16 +1993,12 @@
                             <div class="play-btn-circle"><i class="fa-solid fa-play"></i></div>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center justify-content-between mt-3 gap-3">
+                    <div class="d-flex flex-column align-items-start mt-3 gap-3">
                         <div>
 
                             <img src="media/logo_revolut_black_0c39688f55.svg" alt="Company logo"
                                 class="testimonial-logo mb-2 mt-3">
-                            <p class="text-muted fs-5 mt-3"
-                                style="font-size: 14px; color: #444; line-height: 1.5; margin: 0;">
-                                See how the Revolut team has hired 150+ workers and<br> relocated 10+ people through
-                                Deel
-                            </p>
+                            <p class="text-muted fs-5 mt-3"                                 style="font-size: 14px; color: #444; line-height: 1.5; margin: 0;">                                 See how the Revolut team has hired 150+ workers and  relocated 10+ people through                                 Deel                             </p>
                         </div>
                         <a href="#" class="btn btn-outline-dark rounded-pill px-4 flex-shrink-0"
                             style="font-size: 14px;">Learn more &rarr;</a>
@@ -1965,17 +2015,12 @@
                             <div class="play-btn-circle">&#9654;</div>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center justify-content-between mt-3 gap-3">
+                    <div class="d-flex flex-column align-items-start mt-3 gap-3">
                         <div>
 
                             <img src="media/cocoroco_logo_1_1_7e36f56f96.webp" alt="Revolut"
                                 class="testimonial-logo mb-2 mt-3">
-                            <p class="text-muted fs-5 mt-3"
-                                style="font-size: 14px; color: #444; line-height: 1.5; margin: 0;">
-                                By embedding Deel into their platform, Cocoroco<br> automated every hire, contract, and
-                                payment through a<br> single, fully branded experience. Check out more on how<br> Deel's
-                                become the perfect product partner for Cocoroco..
-                            </p>
+                            <p class="text-muted fs-5 mt-3"                                 style="font-size: 14px; color: #444; line-height: 1.5; margin: 0;">                                 By embedding Deel into their platform, Cocoroco  automated every hire, contract, and                                 payment through a  single, fully branded experience. Check out more on how  Deel's                                 become the perfect product partner for Cocoroco..                             </p>
                         </div>
                         <a href="#" class="btn btn-outline-dark rounded-pill px-4 flex-shrink-0"
                             style="font-size: 14px;">Learn more &rarr;</a>
@@ -1992,17 +2037,12 @@
                             <div class="play-btn-circle">&#9654;</div>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center justify-content-between mt-3 gap-3">
+                    <div class="d-flex flex-column align-items-start mt-3 gap-3">
                         <div>
 
                             <img src="media/Cal_com_idvc_Cwb_TDI_0_e1df06512b.svg" alt="Company logo"
                                 class="testimonial-logo mb-2">
-                            <p class="text-muted fs-5 mt-3"
-                                style="font-size: 14px; color: #444; line-height: 1.5; margin: 0;">
-                                Cal.com wins in the competitive global market with Deel.<br> From wiring money by hand
-                                to running a borderless<br> company on one platform, see how Cal.com uses Deel to<br>
-                                hire, pay, and support a global team - without borders<br> slowing them down.
-                            </p>
+                            <p class="text-muted fs-5 mt-3"                                 style="font-size: 14px; color: #444; line-height: 1.5; margin: 0;">                                 Cal.com wins in the competitive global market with Deel.  From wiring money by hand                                 to running a borderless  company on one platform, see how Cal.com uses Deel to                                  hire, pay, and support a global team - without borders  slowing them down.                             </p>
                         </div>
                         <a href="#" class="btn btn-outline-dark rounded-pill px-4 flex-shrink-0"
                             style="font-size: 14px;">Learn more &rarr;</a>
@@ -2019,19 +2059,12 @@
                             <div class="play-btn-circle">&#9654;</div>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center justify-content-between mt-3 gap-3">
+                    <div class="d-flex flex-column align-items-start mt-3 gap-3">
                         <div>
 
                             <img src="media/logo_strada_black_94a9eca00a.svg" alt="Company logo"
                                 class="testimonial-logo mb-2">
-                            <p class="text-muted fs-5 mt-3"
-                                style="font-size: 14px; color: #444; line-height: 1.5; margin: 0;">
-                                Cal.com wins in the competitive global market with Deel. From wiring<br> money by hand
-                                to running a borderless company on one platform, see<br> how Cal.com uses Deel to
-                                hire,pay, and support a global team - without<br> borders slowing them down.
-
-
-                            </p>
+                            <p class="text-muted fs-5 mt-3"                                 style="font-size: 14px; color: #444; line-height: 1.5; margin: 0;">                                 Cal.com wins in the competitive global market with Deel. From wiring  money by hand                                 to running a borderless company on one platform, see  how Cal.com uses Deel to                                 hire,pay, and support a global team - without  borders slowing them down.                               </p>
                         </div>
                         <a href="#" class="btn btn-outline-dark rounded-pill px-4 flex-shrink-0"
                             style="font-size: 14px;">Learn more &rarr;</a>
@@ -2048,16 +2081,11 @@
                             <div class="play-btn-circle">&#9654;</div>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center justify-content-between mt-3 gap-3">
+                    <div class="d-flex flex-column align-items-start mt-3 gap-3">
                         <div>
 
                             <img src="media/sardine_74fae8b063.webp" alt="Company logo" class="testimonial-logo mb-2">
-                            <p class="text-muted fs-5 mt-3"
-                                style="font-size: 14px; color: #444; line-height: 1.5; margin: 0;">
-                                Cal.com wins in the competitive global market with Deel.<br> From wiring money by hand
-                                to running a borderless<br> company on one platform, see how Cal.com uses Deel to<br>
-                                hire, pay, and support a global team - without borders<br> slowing them down.
-                            </p>
+                            <p class="text-muted fs-5 mt-3"                                 style="font-size: 14px; color: #444; line-height: 1.5; margin: 0;">                                 Cal.com wins in the competitive global market with Deel.  From wiring money by hand                                 to running a borderless  company on one platform, see how Cal.com uses Deel to                                  hire, pay, and support a global team - without borders  slowing them down.                             </p>
                         </div>
                         <a href="#" class="btn btn-outline-dark rounded-pill px-4 flex-shrink-0"
                             style="font-size: 14px;">Learn more &rarr;</a>
@@ -2074,17 +2102,12 @@
                             <div class="play-btn-circle">&#9654;</div>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center justify-content-between mt-3 gap-3">
+                    <div class="d-flex flex-column align-items-start mt-3 gap-3">
                         <div>
 
                             <img src="media/superfiliate_2x_b68ce07b6c.webp" alt="Company logo"
                                 class="testimonial-logo mb-2">
-                            <p class="text-muted fs-5 mt-3"
-                                style="font-size: 14px; color: #444; line-height: 1.5; margin: 0;">
-                                Cal.com wins in the competitive global market with Deel.<br> From wiring money by hand
-                                to running a borderless<br> company on one platform, see how Cal.com uses Deel to<br>
-                                hire, pay, and support a global team - without borders<br> slowing them down.
-                            </p>
+                            <p class="text-muted fs-5 mt-3"                                 style="font-size: 14px; color: #444; line-height: 1.5; margin: 0;">                                 Cal.com wins in the competitive global market with Deel.  From wiring money by hand                                 to running a borderless  company on one platform, see how Cal.com uses Deel to                                  hire, pay, and support a global team - without borders  slowing them down.                             </p>
                         </div>
                         <a href="#" class="btn btn-outline-dark rounded-pill px-4 flex-shrink-0"
                             style="font-size: 14px;">Learn more &rarr;</a>
@@ -2101,17 +2124,12 @@
                             <div class="play-btn-circle">&#9654;</div>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center justify-content-between mt-3 gap-3">
+                    <div class="d-flex flex-column align-items-start mt-3 gap-3">
                         <div>
 
                             <img src="media/bowmans_2x_976c4e427c.webp" alt="Company logo"
                                 class="testimonial-logo mb-2">
-                            <p class="text-muted fs-5 mt-3"
-                                style="font-size: 14px; color: #444; line-height: 1.5; margin: 0;">
-                                Cal.com wins in the competitive global market with Deel.<br> From wiring money by hand
-                                to running a borderless<br> company on one platform, see how Cal.com uses Deel to<br>
-                                hire, pay, and support a global team - without borders<br> slowing them down.
-                            </p>
+                            <p class="text-muted fs-5 mt-3"                                 style="font-size: 14px; color: #444; line-height: 1.5; margin: 0;">                                 Cal.com wins in the competitive global market with Deel.  From wiring money by hand                                 to running a borderless  company on one platform, see how Cal.com uses Deel to                                  hire, pay, and support a global team - without borders  slowing them down.                             </p>
                         </div>
                         <a href="#" class="btn btn-outline-dark rounded-pill px-4 flex-shrink-0"
                             style="font-size: 14px;">Learn more &rarr;</a>
@@ -2127,17 +2145,12 @@
                             <div class="play-btn-circle">&#9654;</div>
                         </div>
                     </div>
-                    <div class="d-flex align-items-center justify-content-between mt-3 gap-3">
+                    <div class="d-flex flex-column align-items-start mt-3 gap-3">
                         <div>
 
                             <img src="media/Cal_com_idvc_Cwb_TDI_0_e1df06512b.svg" alt="Company logo"
                                 class="testimonial-logo mb-2">
-                            <p class="text-muted fs-5 mt-3"
-                                style="font-size: 14px; color: #444; line-height: 1.5; margin: 0;">
-                                Cal.com wins in the competitive global market with Deel.<br> From wiring money by hand
-                                to running a borderless<br> company on one platform, see how Cal.com uses Deel to<br>
-                                hire, pay, and support a global team - without borders<br> slowing them down.
-                            </p>
+                            <p class="text-muted fs-5 mt-3"                                 style="font-size: 14px; color: #444; line-height: 1.5; margin: 0;">                                 Cal.com wins in the competitive global market with Deel.  From wiring money by hand                                 to running a borderless  company on one platform, see how Cal.com uses Deel to                                  hire, pay, and support a global team - without borders  slowing them down.                             </p>
                         </div>
                         <a href="#" class="btn btn-outline-dark rounded-pill px-4 flex-shrink-0"
                             style="font-size: 14px;">Learn more &rarr;</a>
@@ -2155,57 +2168,55 @@
             </h1>
             <h1 class="d-none d-md-block text-center">Deel makes growing remote and<br> international teams effortless
             </h1>
-            <main class="row mt-5">
-                <div class="col-12 col-md-6 col-lg-3 " style="min-width: 100px;">
+            <main class="row mt-5 gy-5">
+                <div class="col-12 col-md-6 col-lg-3">
                     <h1 class="text-center" style="font-size: 64px; font-weight: 600;">150+</h1>
                     <p class="fw-bold text-center">countries</p>
                 </div>
-                <div class="col-12 col-md-6 col-lg-3 ">
+                <div class="col-12 col-md-6 col-lg-3">
                     <h1 class="text-center" style="font-size: 64px; font-weight: 600;">40,000+</h1>
-                    <p class="text-center" style="font-size: 18px; font-weight: 600;">customers</p>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3 ">
-                    <h1 class="text-center" style="font-size: 64px; font-weight: 600;">$20B+</h1>
-                    <p class="fw-bold text-center">compliantly processed global<br> payroll</p>
+                    <p class="fw-bold text-center">customers</p>
                 </div>
                 <div class="col-12 col-md-6 col-lg-3">
-                    <h1 class="fw-bolder text-center" style="font-size: 64px;">90+</h1>
+                    <h1 class="text-center" style="font-size: 64px; font-weight: 600;">$20B+</h1>
+                    <p class="fw-bold text-center">compliantly processed global payroll</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <h1 class="text-center" style="font-size: 64px; font-weight: 600;">90+</h1>
                     <p class="fw-bold text-center">NPS for enterprise customers</p>
                 </div>
             </main>
-            <button type="button" class="btn btn-dark rounded-pill" style="align-items: center;">Get a free 30-minute demo</button>
+            <div class="text-center mt-5 mb-5 pb-4">
+                <button type="button" class="btn btn-dark rounded-pill px-4 py-3 fw-bold">Get a free 30-minute demo</button>
+            </div>
         </nav>
     </section>
 
 
-    <section class="last-card" style="padding-top: 90px;">
+        <section class="last-card" style="padding-top: 90px;">
         <nav class="container">
-            <div class="d-md-flex justify-content-between align-items-center">
-                <div class="d-flex gap-2">
+            <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center mb-5">
+                <div class="d-flex gap-3 align-items-center">
                     <svg width="56" height="56" viewBox="0 0 56 57" xmlns="http://www.w3.org/2000/svg">
                         <path fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"
                             d="M28 56.5C43.4672 56.5 56 43.9672 56 28.5C56 13.044 43.4672 0.5 28 0.5C12.5328 0.5 0 13.0328 0 28.5C0 43.9672 12.5328 56.5 28 56.5ZM32.8413 23.8874H40.0745V21.8925H35.2934C35.4278 21.1374 35.8868 20.7091 36.8274 20.2358L37.7119 19.785C39.2795 18.9735 40.1193 18.0606 40.1193 16.5616C40.1193 15.6261 39.761 14.8823 39.0332 14.3413C38.3278 13.8003 37.4656 13.5411 36.4691 13.5411C35.6741 13.5411 34.9463 13.7439 34.2857 14.1609C33.6362 14.578 33.1436 15.0964 32.8413 15.7501L34.2297 17.1476C34.7671 16.0544 35.5397 15.5134 36.5698 15.5134C37.432 15.5134 37.9695 15.9642 37.9695 16.5841C37.9695 17.1026 37.7119 17.5421 36.7154 18.0493L36.1556 18.3311C34.9239 18.9622 34.0729 19.6722 33.5803 20.4837C33.0876 21.2839 32.8413 22.3096 32.8413 23.5493V23.8874ZM31.52 26.1866H39.4363L43.4 33.0842L39.4475 39.9818L35.4837 33.0842H27.5675L31.52 26.1866ZM19.1137 28.4971C19.1137 33.5688 23.2118 37.6939 28.2505 37.6939C30.5235 37.6939 32.6061 36.8486 34.1961 35.4736L37.6672 41.5146C35.0247 43.4531 31.7663 44.6027 28.2505 44.6027C19.4049 44.6027 12.25 37.3896 12.25 28.4971C12.25 19.6159 19.4161 12.4027 28.2505 12.4027C29.3254 12.4027 30.3667 12.5042 31.3856 12.707L28.2505 19.3003C23.2118 19.3003 19.1137 23.4253 19.1137 28.4971Z">
                         </path>
                     </svg>
-
                     <div>
-                        <h1 style="font-size: 28px;" class="mb-0">Excellent global payroll</h1>
-                        <a href="">4.8/5 based on 5,733+ reviews</a>
+                        <h1 style="font-size: clamp(20px, 4vw, 28px);" class="text-white mb-0">Excellent global payroll</h1>
+                        <a href="#" class="text-white text-decoration-underline" style="font-size: 14px;">4.8/5 based on 5,733+ reviews</a>
                     </div>
                 </div>
 
-
-                <div class="d-flex gap-3">
-                    <div class="border border-white p-3 rounded-circle review-btn" id="prev-review">
-                        <i class="fa-solid fa-arrow-left"></i>
+                <div class="d-flex gap-3 mt-4 mt-md-0">
+                    <div class="border border-secondary p-3 rounded-circle review-btn" id="prev-review">
+                        <i class="fa-solid fa-arrow-left text-white"></i>
                     </div>
-                    <div class="border border-white p-3 rounded-circle review-btn" id="next-review">
-                        <i class="fa-solid fa-arrow-right"></i>
+                    <div class="border border-secondary p-3 rounded-circle review-btn" id="next-review">
+                        <i class="fa-solid fa-arrow-right text-white"></i>
                     </div>
-
                 </div>
             </div>
-
 
             <main class="mt-5 position-relative overflow-hidden pb-4">
                 <div class="d-flex gap-5 review-track" id="review-track"
@@ -2215,216 +2226,223 @@
                     <div class="review-card flex-shrink-0" style="width: 300px; scroll-snap-align: start;">
                         <p class="text-white fw-semibold mb-2" style="font-size: 12px;">Jeremy C.</p>
                         <div class="d-flex mb-3 gap-1" style="color: #f5c451; font-size: 14px;">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p style="color: #a0a0a0; font-size: 14px; line-height: 1.6;">The best payroll solution, period.
-                            We've used every payroll solution - Gusto, Rippling, you name it - Deel is the only one that
-                            is...</p>
+                        <p style="color: #a0a0a0; font-size: 14px; line-height: 1.6;">The best payroll solution, period. We've used every payroll solution - Gusto, Rippling, you name it - Deel is the only one that is...</p>
                     </div>
 
                     <!-- Card 2 -->
                     <div class="review-card flex-shrink-0" style="width: 300px; scroll-snap-align: start;">
                         <p class="text-white fw-semibold mb-2" style="font-size: 12px;">Kanshobi S.</p>
                         <div class="d-flex mb-3 gap-1" style="color: #f5c451; font-size: 14px;">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p style="color: #a0a0a0; font-size: 14px; line-height: 1.6;">Simply the best platform for
-                            global payroll. Admin that used to take days now takes 5 minutes.</p>
+                        <p style="color: #a0a0a0; font-size: 14px; line-height: 1.6;">Simply the best platform for global payroll. Admin that used to take days now takes 5 minutes.</p>
                     </div>
 
                     <!-- Card 3 -->
                     <div class="review-card flex-shrink-0" style="width: 300px; scroll-snap-align: start;">
                         <p class="text-white fw-semibold mb-2" style="font-size: 12px;">Sparsh S.</p>
                         <div class="d-flex mb-3 gap-1" style="color: #f5c451; font-size: 14px;">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p style="color: #a0a0a0; font-size: 14px; line-height: 1.6;">I love the money transfer feature.
-                            With one click you can transfer money to any bank in the world.</p>
+                        <p style="color: #a0a0a0; font-size: 14px; line-height: 1.6;">I love the money transfer feature. With one click you can transfer money to any bank in the world.</p>
                     </div>
 
                     <!-- Card 4 -->
                     <div class="review-card flex-shrink-0" style="width: 300px; scroll-snap-align: start;">
                         <p class="text-white fw-semibold mb-2" style="font-size: 12px;">Jose Mario L.</p>
                         <div class="d-flex mb-3 gap-1" style="color: #f5c451; font-size: 14px;">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p style="color: #a0a0a0; font-size: 14px; line-height: 1.6;">An indispensable tool for global
-                            payroll With Deel you can send money from anywhere in the world and get it transferred same
-                            day ...</p>
+                        <p style="color: #a0a0a0; font-size: 14px; line-height: 1.6;">An indispensable tool for global payroll With Deel you can send money from anywhere in the world and get it transferred same day ...</p>
                     </div>
 
+                    <!-- Card 5 -->
                     <div class="review-card flex-shrink-0" style="width: 300px; scroll-snap-align: start;">
-                        <p class="text-white fw-semibold mb-2" style="font-size: 12px;">Jose Mario L.</p>
+                        <p class="text-white fw-semibold mb-2" style="font-size: 12px;">Mohammed H.</p>
                         <div class="d-flex mb-3 gap-1" style="color: #f5c451; font-size: 14px;">
-                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                                class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
                         </div>
-                        <p style="color: #a0a0a0; font-size: 14px; line-height: 1.6;">An indispensable tool for global
-                            payroll With Deel you can send money from anywhere in the world and get it transferred same
-                            day ...</p>
+                        <p style="color: #a0a0a0; font-size: 14px; line-height: 1.6;">The best choice for companies operating internationally: facilitates payroll through local policies, eliminating a big challenge f...</p>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="review-card flex-shrink-0" style="width: 300px; scroll-snap-align: start;">
+                        <p class="text-white fw-semibold mb-2" style="font-size: 12px;">Juan Pablo C.</p>
+                        <div class="d-flex mb-3 gap-1" style="color: #f5c451; font-size: 14px;">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p style="color: #a0a0a0; font-size: 14px; line-height: 1.6;">The best and most flexible global payment platform on the market.</p>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="review-card flex-shrink-0" style="width: 300px; scroll-snap-align: start;">
+                        <p class="text-white fw-semibold mb-2" style="font-size: 12px;">Chanelle D.</p>
+                        <div class="d-flex mb-3 gap-1" style="color: #f5c451; font-size: 14px;">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p style="color: #a0a0a0; font-size: 14px; line-height: 1.6;">Deel has made my experience with employing and paying international folks a breeze!</p>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="review-card flex-shrink-0" style="width: 300px; scroll-snap-align: start;">
+                        <p class="text-white fw-semibold mb-2" style="font-size: 12px;">Alexandra S.</p>
+                        <div class="d-flex mb-3 gap-1" style="color: #f5c451; font-size: 14px;">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p style="color: #a0a0a0; font-size: 14px; line-height: 1.6;">Makes it easy to pay a worldwide team. You simply pay in one currency, and your employees and contractors receive in their local c...</p>
                     </div>
 
                 </div>
             </main>
 
-            <div class="border-bottom mb-5  pb-5">
-                <a href="" class="text-decoration-none text-white fw-bold">About Us</a>
-                <a href="" class="text-decoration-none text-white">Leadership team</a>
-                <a href="" class="text-decoration-none text-white">Careers</a>
-                <a href="" class="text-decoration-none text-white">Pricing</a>
+            <!-- Bottom Footer Top Links -->
+            <div class="d-flex flex-wrap gap-4 pb-4 mb-5" style="border-bottom: 1px solid #333;">
+                <a href="#" class="text-decoration-none text-white fw-semibold">About us</a>
+                <a href="#" class="text-decoration-none text-white fw-semibold">Leadership team</a>
+                <a href="#" class="text-decoration-none text-white fw-semibold">Careers</a>
+                <a href="#" class="text-decoration-none text-white fw-semibold">Pricing</a>
             </div>
 
-            <div style="margin-top: 50px border-bottom;" class="border-bottom pb-5">
-                <main class="row gap-5">
-                    <div class="col-lg-2 col-12 flex-wrap ">
-                        <div class="fw-bold py-2">Solutions</div>
-                        <div class="py-2">Deel payroll</div>
-                        <div class="py-2">Deel HR</div>
-                        <div class="py-2">Deel IT</div>
-                        <div class="py-2">Deel Benefit</div>
-                        <div class="py-2">Deel Hire</div>
-                        <div class="py-2">Deel Mobility</div>
-                        <div class="py-2">Deel Embedded</div>
-                        <div class="py-2">Deel Services</div>
-                        <div class="py-2">All solution</div>
-                    </div>
-
+            <!-- Footer Columns -->
+            <div class="pb-5 mb-5" style="border-bottom: 1px solid #333;">
+                <div class="row g-4">
                     <div class="col-lg-2 col-12">
-                        <div class="py-2 fw-bold">Deel Platform</div>
-                        <div class="py-2">HR Platform</div>
-                        <div class="py-2">Deel AI</div>
-                        <div class="py-2">White label</div>
-                        <div class="py-2">Deel API</div>
-                        <div class="py-2">Integrations</div>
-                        <div class="py-2">Workflows</div>
-                        <div class="py-2">Akai</div>
-                        <div class="py-2">Platform status</div>
-
-                    </div>
-
-                    <div class="col-lg-2 col-12">
-                        <div class="py-2 fw-bold">Why Deel?</div>
-                        <div class="py-2">Built on in-house infrastructure</div>
-                        <div class="py-2">Customer stories</div>
-                        <div class="py-2">Compare Deel</div>
-                        <div class="py-2">Security</div>
-                        <div class="py-2">Trust center</div>
-                        <div class="py-2">Become a partner</div>
-                        <div class="py-2">Become an affiliate</div>
-                        <div class="py-2">G2 customer reviews</div>
-
-                    </div>
-
-                    <div class="col-lg-2 col-12">
-                        <div class="py-2 fw-bold">Resources</div>
-                        <div class="py-2">Blog</div>
-                        <div class="py-2">Template and Guides</div>
-                        <div class="py-2">Global Hiriing Guides</div>
-                        <div class="py-2">Webinars & Events</div>
-                        <div class="py-2">Global Work Glossary</div>
-                        <div class="py-2">Deel Impact</div>
-                        <div class="py-2">Job Descriptions Templates</div>
-                        <div class="py-2">Free HR tools</div>
-                        <div class="py-2">API Documentation</div>
-                        <div class="py-2">Help Center</div>
-                        <div class="py-2">Press</div>
-
-                    </div>
-
-                    <div class="col-lg-2 col-12">
-                        <div class="py-2 fw-bold">Customers</div>
-                        <div class="py-2">Revolut</div>
-                        <div class="py-2">BCG</div>
-                        <div class="py-2">FICO</div>
-                        <div class="py-2">Puma</div>
-                        <div class="py-2">Outreach</div>
-                        <div class="py-2">Zip Co</div>
-                        <div class="py-2">Directional Pizza</div>
-
-
-
-                    </div>
-                </main>
-            </div>
-
-            <div class="pt-5 border-bottom pb-5">
-                <nav class="row gap-4">
-                    <div class="col-12 col-md-6 col-lg-4">
-                        <img src="media/logo_revamp_white_3237bd2303.svg" alt="">
-                        <div class="pt-3">
-                            <img src="media/twitter-filled.8731c38f.svg" alt="">
-                            <img src="media/footer-icon-linkedin.8b69a409.svg" alt="">
-                            <img src="media/facebook-filled.9dee679d.svg" alt="">
-                            <img src="media/instagram-filled.a70f7d56.svg" alt="">
+                        <div class="fw-bold mb-3 text-white">Solutions</div>
+                        <div class="row g-2">
+                            <div class="col-6 col-lg-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Deel Payroll</a></div>
+                            <div class="col-6 col-lg-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Deel HR</a></div>
+                            <div class="col-6 col-lg-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Deel IT</a></div>
+                            <div class="col-6 col-lg-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Deel Benefits</a></div>
+                            <div class="col-6 col-lg-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Deel Hire</a></div>
+                            <div class="col-6 col-lg-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Deel Mobility</a></div>
+                            <div class="col-6 col-lg-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Deel Embedded</a></div>
+                            <div class="col-6 col-lg-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Deel Services</a></div>
+                            <div class="col-6 col-lg-12"><a href="#" class="text-decoration-none text-white" style="font-size: 14px;">All Solutions</a></div>
                         </div>
                     </div>
 
-
-                    <div class="fw-bolder col-12 col-md-6 col-lg-4" style="font-size: 20px; line-height: 1.1;">
-                        Get the latest insights on today's world<br> of work delivered straight to your inbox.
-                    </div>
-                    <div class="col-12 col-md-12 col-lg-4">
-                        <div class="position-relative">
-                            <div class="rounded-circle bg-dark position-absolute mt-2 me-2 z-1"
-                                style="height: 44px; width: 44px; right: 0;"><i class="fa-solid fa-arrow-right"
-                                    style="height: 20px; width: 20px; margin: 15px; position: absolute;"></i></div>
-                            <input type="email" name="" id="" placeholder="what is your e-mail?"
-                                style="width: 100%; height: 60px; padding: 20px 10px;border-radius: 40px;">
+                    <div class="col-lg-2 col-12">
+                        <div class="fw-bold mb-3 text-white">Deel Platform</div>
+                        <div class="row g-2">
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">HR Platform</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Deel AI</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">White label</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Deel API</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Integrations</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Workflows</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Akai</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Platform status</a></div>
                         </div>
-
-                        <div class="text-secondary fw-lighter" style="font-size: 13px;">I confirm that I have read
-                            Deel’s Privacy Policy and agree with it.</div>
                     </div>
 
+                    <div class="col-lg-3 col-12">
+                        <div class="fw-bold mb-3 text-white">Why Deel?</div>
+                        <div class="row g-2">
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Built on in-house infrastructure</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Customer stories</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Compare Deel</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Security</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Trust center</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Become a partner</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Become an affiliate</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">G2 customer reviews</a></div>
+                        </div>
+                    </div>
 
+                    <div class="col-lg-3 col-12">
+                        <div class="fw-bold mb-3 text-white">Resources</div>
+                        <div class="row g-2">
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Blog</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Templates And Guides</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Global Hiring Guides</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Webinars & Events</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Global Work Glossary</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Deel Impact</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Job Description Templates</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Free HR tools</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">API Documentation</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Help Center</a></div>
+                            <div class="col-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Press</a></div>
+                        </div>
+                    </div>
 
-                </nav>
-            </div>
-
-
-            <div class="mt-3 d-flex flex-column  gap-3">
-
-                <p style="color: rgb(217, 208, 202); font-size: 12px;">© Copyright 2026. All Rights Reserved.</p>
-                <div class="d-flex gap-3 flex-wrap">
-                    <a href="" class="text-decoration-none" style="color: rgb(217, 208, 202); font-size: 12px;">
-                        <p>LLM Info</p>
-                    </a>
-                    <a href="" class="text-decoration-none " style="color: rgb(217, 208, 202); font-size: 12px;">
-                        <p>Disclaimer</p>
-                    </a>
-                    <a href="" class="text-decoration-none" style="color: rgb(217, 208, 202); font-size: 12px;">
-                        <p>Privacy Policy</p>
-                    </a>
-                    <a href="" class="text-decoration-none" style="color: rgb(217, 208, 202); font-size: 12px;">
-                        <p>Cookie Settings</p>
-                    </a>
-                    <a href="" class="text-decoration-none" style="color: rgb(217, 208, 202); font-size: 12px;">
-                        <p>Legal Hub</p>
-                    </a>
-                    <a href="" class="text-decoration-none" style="color: rgb(217, 208, 202); font-size: 12px;">
-                        <p>Whistleblower Policy</p>
-                    </a>
-                    <a href="" class="text-decoration-none" style="color: rgb(217, 208, 202); font-size: 12px;">
-                        <p>Disclosures</p>
-                    </a>
-                    <a href="" class="text-decoration-none" style="color: rgb(217, 208, 202); font-size: 12px;">
-                        <p>Licenses and Compliance</p>
-                    </a>
+                    <div class="col-lg-2 col-12">
+                        <div class="fw-bold mb-3 text-white">Customers</div>
+                        <div class="row g-2">
+                            <div class="col-6 col-lg-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Revolut</a></div>
+                            <div class="col-6 col-lg-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">BCG</a></div>
+                            <div class="col-6 col-lg-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">FICO</a></div>
+                            <div class="col-6 col-lg-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Puma</a></div>
+                            <div class="col-6 col-lg-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Outreach</a></div>
+                            <div class="col-6 col-lg-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Zip Co</a></div>
+                            <div class="col-6 col-lg-12"><a href="#" class="text-decoration-none text-secondary" style="font-size: 14px;">Directional Pizza</a></div>
+                        </div>
+                    </div>
                 </div>
-
-
-
             </div>
 
+          
+            <div class="pb-5 mb-4" style="border-bottom: 1px solid #333;">
+                <div class="row align-items-center g-4">
+                    <div class="col-12 col-lg-3">
+                        <img src="media/logo_revamp_white_3237bd2303.svg" alt="Deel Logo" style="height: 32px;">
+                        <div class="d-flex gap-3 mt-4">
+                            <div class="border border-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;">
+                                <i class="fa-brands fa-x-twitter text-white"></i>
+                            </div>
+                            <div class="border border-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;">
+                                <i class="fa-brands fa-linkedin-in text-white"></i>
+                            </div>
+                            <div class="border border-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;">
+                                <i class="fa-brands fa-facebook-f text-white"></i>
+                            </div>
+                            <div class="border border-secondary rounded-circle d-flex align-items-center justify-content-center" style="width: 36px; height: 36px;">
+                                <i class="fa-brands fa-instagram text-white"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-9 mt-5 mt-lg-0">
+                        <div class="row align-items-center g-4">
+                            <div class="col-12 col-lg-6">
+                                <h3 class="fw-bold text-white mb-0" style="font-size: clamp(5px, 2vw, 20px); line-height: 1.2;">
+                                    Get the latest insights on today's world of work delivered straight to your inbox.
+                                </h3>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <div class="position-relative mb-3">
+                                    <input type="email" class="form-control rounded-pill border-0 px-4" placeholder="What's your e-mail?" style="height: 56px; padding-right: 60px !important;">
+                                    <button class="btn btn-dark rounded-circle position-absolute" style="top: 6px; right: 6px; width: 44px; height: 44px; padding: 0;">
+                                        <i class="fa-solid fa-arrow-right text-white"></i>
+                                    </button>
+                                </div>
+                                <div class="text-secondary" style="font-size: 12px;">
+                                    I confirm that I have read <a href="#" class="text-white text-decoration-none fw-semibold">Deel's Privacy Policy</a> and agree with it.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+         
+            <div class="d-flex flex-column flex-lg-row justify-content-between align-items-start align-items-lg-center gap-3 pb-5">
+                <div class="text-secondary" style="font-size: 12px;">
+                    © Copyright 2026. All Rights Reserved.
+                </div>
+                <div class="d-flex gap-3 flex-wrap">
+                    <a href="#" class="text-decoration-none text-secondary hover-white" style="font-size: 12px;">LLM Info</a>
+                    <a href="#" class="text-decoration-none text-secondary hover-white" style="font-size: 12px;">Disclaimer</a>
+                    <a href="#" class="text-decoration-none text-secondary hover-white" style="font-size: 12px;">Privacy Policy</a>
+                    <a href="#" class="text-decoration-none text-secondary hover-white" style="font-size: 12px;">Cookie Settings</a>
+                    <a href="#" class="text-decoration-none text-secondary hover-white" style="font-size: 12px;">Legal Hub</a>
+                    <a href="#" class="text-decoration-none text-secondary hover-white" style="font-size: 12px;">Whistleblower Policy</a>
+                    <a href="#" class="text-decoration-none text-secondary hover-white" style="font-size: 12px;">Disclosures</a>
+                    <a href="#" class="text-decoration-none text-secondary hover-white" style="font-size: 12px;">Licenses and Compliance</a>
+                </div>
+            </div>
         </nav>
     </section>
 
