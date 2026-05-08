@@ -277,10 +277,11 @@ body {
 .speed-nav .nav-link .icon-box {
     width: 28px;
     height: 28px;
-    margin: 4px;
+    margin: 4px 4px 4px 0;
     border-radius: 6px;
     display: flex;
     align-items: center;
+
     justify-content: center;
     transition: background-color 0.3s ease;
     background-color: transparent;
